@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './shop.css'
 import img from '../../images/Madrid_Heathered-Grey_Feature-Float-1380.webp'
 import Product from '../Product/Product';
+import Cart from '../Cart/Cart';
 
 
 // data file e thakle sheta public folder e ene then fetch korte hobe
@@ -90,16 +91,11 @@ const Shoppingcart = () => {
                 {/* another side */}
 
                 <div className='shopingCart-container'>
-                    <div className='shoppingcart-info'>
-                        <h3 className=' mb-5'>Order Summary</h3>
-                        <p>Selected Items: {cart.length}</p>
-                        <p>Total Price:</p>
-                        <p>Total Shipping Charge:</p>
-                        <p>Tax:</p>
-                        <h6>Grand Total:</h6>
+                {/* another component baniye shekhane korbo akkhan theke cart r data ta padhiye dilam click korle pura object jabe */}
+                    <div>
+                        <Cart cart={cart}></Cart>
                     </div>
-                    <button className='btn btn-danger mt-5 d-block mx-auto'>Clear Cart</button>
-                    <button className='btn btn-primary mt-2 d-block mx-auto'>Review Order</button>
+                
                 </div>
             </div>
 
