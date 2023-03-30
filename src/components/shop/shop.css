@@ -1,0 +1,33 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* border: 1px solid; */
+    position: relative;
+}
+
+.products-container{
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 50px;
+}
+
+.shopingCart-container{
+    /* position: sticky;
+    bottom: 0; */
+
+    background: #e2c862;
+}
+
+
+.shoppingcart-info{
+    padding: 20px;
+}
+
+
+.shopingCart-container button{
+    width: 200px;
+}
+
+

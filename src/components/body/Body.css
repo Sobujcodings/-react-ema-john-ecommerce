@@ -1,0 +1,25 @@
+.body {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body img {
+    height: 350px;
+    width: 300px;
+    padding: 10px;
+}
+
+.outsidebody {
+    background: #fafafa;
+    padding: 135px;
+}
+
+.btn{
+    background: #FF9900;
+}
+
+.body h6{
+    color: #FF9900;
+}

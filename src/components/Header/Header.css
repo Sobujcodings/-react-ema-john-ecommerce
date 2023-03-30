@@ -1,0 +1,17 @@
+.header{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; */
+}
+
+.header a {
+    text-decoration: none;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.header img {
+    margin-left: 30px;
+}
