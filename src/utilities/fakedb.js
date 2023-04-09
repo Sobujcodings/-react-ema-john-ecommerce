@@ -10,10 +10,11 @@ const addToDb = id => {
         const newQuantity = quantity + 1;  // thakle ager tar sathe 1 jog koro
         shoppingCart[id] = newQuantity;    //new quanity ta value hishebe set kore deo
     }
-    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));//add korar por set kore deoLS e
+    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));  //add korar por set kore deo LS e
 }
 
 
+// Remove cart according to their id
 const removeFromDb = id => {
     const shoppingCart = getShoppingCart();
     if (id in shoppingCart) {
@@ -22,7 +23,8 @@ const removeFromDb = id => {
     }
 }
 
-// getting shopping cart
+
+// getting shopping cart if exist in local-storage (just calling the function we can get LS full object)
 const getShoppingCart = () => {
     let shoppingCart = {};
 
@@ -34,9 +36,12 @@ const getShoppingCart = () => {
     return shoppingCart;
 }
 
+
+// deleting the whole LS 
 const deleteShoppingCart = () => {
     localStorage.removeItem('shopping-cart');
 }
+
 
 export {
     addToDb,

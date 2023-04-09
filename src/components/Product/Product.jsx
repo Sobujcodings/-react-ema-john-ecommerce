@@ -2,17 +2,20 @@
 import React from 'react';
 import Shop from '../shop/Shop';
 import './Projuct.css'
-
 import ReactDOM from 'react-dom'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 
 const Product = (props) => {
-    // product e akhn 2ta jinish pabo props hesebe karon 2ra props patahaici ai <Product> component tag r vhitore
+    
+    // product e akhn 2ta jinish pabo props hesebe karon 2ta props patahaici ai <Product> component tag r vhitore
+    
     const { id, price, ratings, img, name, seller } = props.product;
     
     const addtocart = props.Addtocart;
+
     // function ta k padhanor karon jatae ekahne shei function ta k use korte pare (na padhale nich theke opore use korte parbo na)
     // 2nd jeta patahaici sheta arekta variable niye nilm
      //ata akta function ai function e onlick e paramtr pathate parbo
@@ -20,13 +23,6 @@ const Product = (props) => {
     // ai function take props diye niye ashci jate atake onclick e boshale click korle shop r 
     //fucntion e jeye hit kore r akta kichu sekhane korte pari
     // console.log(props.product);
-
-
-    
-    // function localStorage(product){
-        
-    // }
-    // localStorage(props.product);
 
 
 
@@ -44,7 +40,7 @@ const Product = (props) => {
             {/* akta parameter diye pathacchi jate ekhane click kkorle kichu ai related data she niye jay sheta 
             shekane recive kore shekane dekahbo */}
             <button onClick={()=>addtocart(props.product)} className='btn btn-primary'>Add to Cart
-            <FontAwesomeIcon icon={faShoppingCart} />
+            <FontAwesomeIcon className='icon' icon={faShoppingCart} />
             </button>
         </div>
     );

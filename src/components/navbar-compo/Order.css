@@ -1,0 +1,19 @@
+/* .singlecart{
+    display: grid;
+    grid-template-columns: 2fr,1fr;
+    background-color: #000000;
+} */
+
+.remove{
+    /* display: none; */
+    border-radius: 50px;
+    height:50px ;
+    width: 60px;
+    background-color: rgb(233, 182, 182);
+    border: none;
+}
+
+.icon{
+
+    color: rgb(255, 2, 2);
+}
